@@ -1,0 +1,238 @@
+
+
+.detail-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+
+
+.detail-title-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.detail-id-badge {
+  font-family: monospace;
+  font-weight: 700;
+  color: #2563eb;
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.detail-main-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.detail-meta-line {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.detail-actions-cluster {
+  display: flex;
+  
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-approve {
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-approve:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-reject {
+  background-color: #ffffff;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-reject:hover {
+  background-color: #fef2f2;
+}
+
+.btn-block {
+  background-color: #ffffff;
+  color: #683904;
+  border: 1px solid #fde68a;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-block:hover {
+  background-color: #fffbeb;
+}
+
+.stat-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.stat-box {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.stat-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-val-main {
+  font-size: 18px;
+  font-weight: 800;
+  color: #2a0f11;
+  margin-top: 4px;
+}
+
+.stat-val-sub {
+  font-size: 12px;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.terms-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.terms-field-label {
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.terms-field-val {
+  color: #1e293b;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.data-table th {
+  text-align: left;
+  font-size: 10px;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 8px 0;
+}
+
+.data-table td {
+  padding: 12px 0;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+}
+
+.qty-input {
+  width: 70px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 4px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background-color: #f8fafc;
+}
+
+.audit-entry {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+
+.audit-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #2563eb;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+/* 1. Detail header card-ai top-la sticky aakki z-index set panrom */
+.detail-header-card {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  background-color: #ffffff; /* Scroll pannum bodhu keezhe irukkura content pinnala maraiya white background */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); /* Light shadow so scroll panradhu neat-aa theriyum */
+}
+
+
+.detail-container {
+  flex: 1;
+  background-color: #f8fafc;
+  overflow-y: auto;
+  padding: 24px 32px;
+  position: relative;
+}
+
+
+/* Keep the reviewer visible even when individual audit entries are collapsed. */
+.queue-audit-event-meta { display:flex; flex-direction:column; gap:3px; min-width:0; flex:1; }
+.queue-audit-event-meta strong { overflow-wrap:anywhere; }
+.queue-audit-event-meta .queue-audit-by { display:block; font-size:11px; color:var(--text-muted); font-weight:500; }
+.queue-audit-event-summary { gap:8px; }
+.queue-audit-time { flex-shrink:0; }
+.queue-document-name { min-width:0; }
+.queue-document-link { white-space:nowrap; display:inline-flex; align-items:center; }

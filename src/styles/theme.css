@@ -1,0 +1,96 @@
+:root,
+[data-theme="light"] {
+  color-scheme: light;
+  --bg-app: #f8fafc;
+  --bg-main: #ffffff;
+  --bg-card: #ffffff;
+  --bg-subtle: #f8fafc;
+  --bg-hover: #f1f5f9;
+  --bg-selected: #eff6ff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --border-light: #f1f5f9;
+  --input-bg: #ffffff;
+  --button-bg: #ffffff;
+  --tab-bg: #f1f5f9;
+  --tab-active: #ffffff;
+  --link-color: #2563eb;
+  --badge-high-bg: #fee2e2;
+  --badge-high-text: #b91c1c;
+  --badge-high-border: #fecaca;
+  --badge-medium-bg: #fef3c7;
+  --badge-medium-text: #92400e;
+  --badge-medium-border: #fde68a;
+  --badge-low-bg: #dbeafe;
+  --badge-low-text: #1d4ed8;
+  --badge-low-border: #bfdbfe;
+  --badge-open-bg: #eff6ff;
+  --badge-open-text: #1d4ed8;
+  --badge-open-border: #bfdbfe;
+  --badge-approved-bg: #ecfdf5;
+  --badge-approved-text: #047857;
+  --badge-approved-border: #a7f3d0;
+  --badge-blocked-bg: #fef2f2;
+  --badge-blocked-text: #b91c1c;
+  --badge-blocked-border: #fecaca;
+  --badge-rejected-bg: #fff1f2;
+  --badge-rejected-text: #be123c;
+  --badge-rejected-border: #fecdd3;
+  --badge-review-bg: #fefce8;
+  --badge-review-text: #854d0e;
+  --badge-review-border: #fef08a;
+}
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-app: #0b0f19;
+  --bg-main: #0b0f19;
+  --bg-card: #111827;
+  --bg-subtle: #0f172a;
+  --bg-hover: #182334;
+  --bg-selected: #172334;
+  --text-main: #f1f5f9;
+  --text-muted: #cbd5e1;
+  --border-color: #334155;
+  --border-light: #263449;
+  --input-bg: #0f172a;
+  --button-bg: #1e293b;
+  --tab-bg: #111827;
+  --tab-active: #334155;
+  --link-color: #93c5fd;
+  --badge-high-bg: #512626;
+  --badge-high-text: #fca5a5;
+  --badge-high-border: #763636;
+  --badge-medium-bg: #78350f;
+  --badge-medium-text: #fdba74;
+  --badge-medium-border: #6c4f1c;
+  --badge-low-bg: #303b59;
+  --badge-low-text: #93c5fd;
+  --badge-low-border: #456c9c;
+  --badge-open-bg: #303956;
+  --badge-open-text: #93c5fd;
+  --badge-open-border: #303956;
+  --badge-approved-bg: #064e3b;
+  --badge-approved-text: #37bd7e;
+  --badge-approved-border: #1f7357;
+  --badge-blocked-bg: #572525;
+  --badge-blocked-text: #df7f7f;
+  --badge-blocked-border: #532929;
+  --badge-rejected-bg: #4e1728;
+  --badge-rejected-text: #be888c;
+  --badge-rejected-border: #fb7185;
+  --badge-review-bg: #422006;
+  --badge-review-text: #fef08a;
+  --badge-review-border: #a16207;
+}
+html,
+body,
+#root {
+  background-color: var(--bg-app);
+  color: var(--text-main);
+}
+input,
+select,
+textarea {
+  color-scheme: inherit;
+}

@@ -1,0 +1,40 @@
+.tableview-container {
+  flex: 1;
+  background-color: var(--bg-main);
+  padding: 24px;
+  overflow-x: auto;
+}
+
+.tableview-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tableview-table th {
+  background-color: var(--bg-subtle);
+  padding: 10px 12px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border-color);
+  text-align: left;
+}
+
+.tableview-table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.tableview-table tr:hover {
+  background-color: var(--bg-subtle);
+  cursor: pointer;
+}
+
+.tableview-table tr.selected-row {
+  background-color: var(--bg-selected);
+}
